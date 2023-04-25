@@ -1,0 +1,78 @@
+header{
+    background: url(/assets/img/bg-slider-06.jpg) center/cover;
+    height: 100vh;
+    color: $white;
+    padding: 0px 200px 0px 200px;
+    @media screen and (max-width: 1000px) {
+        padding: 20px 75px 0 75px;
+    }
+    nav{
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+        align-items: center;
+        height: 12vh;
+        li{
+            cursor: pointer;
+            :hover{
+                transform: scale(2);
+            }
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-around;
+            li{
+                :hover{
+                    border-bottom: 1px solid $white;
+                }
+            }
+            @media screen and (max-width: 700px) {
+                display: none;
+            }
+        }
+        .social{
+            display: flex;
+            justify-content: space-around;
+            @media screen and (max-width: 700px) {
+                justify-content: flex-end;
+                li{
+                    padding-left: 10%;
+                }
+            }
+        }
+        .logo{
+            h3{
+                font-family: $font1;
+                font-size: 2rem;
+            }
+        }
+    }
+    .header_title{
+        position: relative;
+        top: 100px;
+        h1{
+            @include title2;
+            letter-spacing: 10px;
+            font-size: 3rem;
+            @media screen and (max-width: 700px) {
+                font-size: 2.5rem;
+            }
+        }
+        h2{
+            position: relative;
+            font-family: $font1;
+            color: $color1;
+            font-size: 2.5rem;
+            font-weight: 50;
+            top: 20px;
+        }
+        img{
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        p{
+           font-size: 1rem;
+           letter-spacing: 7px;
+           font-weight: 100; 
+        }
+    }
+}
